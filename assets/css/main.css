@@ -395,6 +395,29 @@ th {
   text-align: inherit;
 }
 
+/* galler starts  */
+
+ .img-gal{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background: teal;
+  padding: 15px;
+}
+.img-gal img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.img-gal img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+/* gallery ends */
+
 /* line 292, node_modules/bootstrap/scss/_reboot.scss */
 label {
   display: inline-block;
