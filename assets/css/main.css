@@ -401,7 +401,8 @@ th {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  background: teal;
+  background: #fff;
+   border-radius: 21px;
   padding: 15px;
 }
 .img-gal img {
