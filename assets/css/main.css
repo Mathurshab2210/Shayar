@@ -402,12 +402,13 @@ th {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   background: #fff;
-   border-radius: 21px;
+  
   padding: 15px;
 }
 .img-gal img {
   width: 100%;
   display: block;
+  border-radius:21px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: all 100ms ease-out;
