@@ -100,7 +100,20 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
+*{
+  box-sizing: border-box;
 
+}
+@media(max-width:469px){
+  *{
+    overflow-x: hidden;
+  }
+  .icon-text{
+    width: 360px;
+  }
+  
+  
+}
 /* line 34, src/assets/scss/generic/_generic.reset.scss */
 ol, ul {
   list-style: none;
@@ -230,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.938rem;
 }
 #para{
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* line 101, node_modules/bootstrap/scss/_reboot.scss */
@@ -5653,9 +5666,7 @@ readers do not read off random characters that represent icons */
 }
 
 /* line 386, node_modules/@fortawesome/fontawesome-free/scss/_icons.scss */
-.fa-dot-circle:before {
-  content: "\f192";
-}
+
 
 /* line 387, node_modules/@fortawesome/fontawesome-free/scss/_icons.scss */
 .fa-dove:before {
@@ -13584,16 +13595,16 @@ img.mfp-img {
 
  .img-gal{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 2px;
   background:#fff;
   padding: 15px;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 .img-gal img {
-  width: 95%;
-  height: 85%;
+  width: 75%;
+  height: 75%;
   display: block;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -13613,8 +13624,8 @@ img.mfp-img {
   background-color: #6730e3;
   border: 2px solid blueviolet;
   border-radius: 25px 5px;
-  width: 250px;
-  margin-left: 43%;
+  width: 200px;
+  margin-left: 20%;
   height: 50px;
 }
 #Seemore:hover{
@@ -13637,7 +13648,7 @@ img.mfp-img {
   border: 2px solid blueviolet;
   border-radius: 25px 5px;
   width: 250px;
-  margin-left: 43%;
+  margin-left: 23%;
   height: 50px;
 }
 
@@ -23145,14 +23156,14 @@ footer a {
 
 /* line 66, src/assets/scss/components/about-section/_common.scss */
 .dot-circle li {
-  position: relative;
-  list-style: none;
+  /* position: relative; */
+  list-style-type: "►";
   padding-left: 25px;
   margin-bottom: 10px;
 }
 
 /* line 71, src/assets/scss/components/about-section/_common.scss */
-.dot-circle li:before {
+/* .dot-circle li:before {
   content: "";
   position: absolute;
   width: 8px;
@@ -23160,12 +23171,13 @@ footer a {
   border-radius: 50%;
   left: 0;
   top: 14px;
+
   background: #6730e3;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all .5s;
   transition: all .5s;
-}
+} */
 
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 88, src/assets/scss/components/about-section/_common.scss */
@@ -29970,3 +29982,4 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
+
