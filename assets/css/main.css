@@ -188,9 +188,11 @@ html {
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 #navchange{
-  background-color: #c9a6e6;
+  background-color:#ffff;
 }
-
+#navchange ul li a{
+  color: black;
+}
 /* line 19, node_modules/bootstrap/scss/_reboot.scss */
 *,
 *::before,
@@ -13674,11 +13676,20 @@ img.mfp-img {
     /* height: auto; */
     float: left;
   }
+  .imge2-fluid{
+    display: none;
+  }
 }
 .imge-fluid {
-  width: 77%;
+  width: 85%;
   height: auto;
+  border-radius: 20px;
+}
+.imge2-fluid {
+  width: 75%;
+  height: 75%;
   border-radius: 25px;
+  float: right;
 }
 
 /* line 14, node_modules/bootstrap/scss/_images.scss */
@@ -23177,7 +23188,7 @@ footer a {
           transform: translateY(-50%);
   -webkit-transition: all .5s;
   transition: all .5s;
-} */
+}  */
 
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 88, src/assets/scss/components/about-section/_common.scss */
@@ -29982,4 +29993,5 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
+
 
