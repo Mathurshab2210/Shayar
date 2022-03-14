@@ -16,6 +16,124 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="aos-by-red.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+<style>
+    /* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color:#9b79eb;
+}
+body{
+    overflow-x: hidden;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer .col ul li {
+  color: black;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.footer .col ul li a:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+</style>
+
+
    
 </head>
 
@@ -37,7 +155,7 @@
     <!--header section start-->
     <header class="header">
         <!--start navbar navbar navbar-expand-lg fixed-top bg-transparent navbar navbar-expand-sm fixed-top navbar-light-->
-        <!-- <nav class="navbar navbar-expand-lg fixed-top bg-transparent" id="navchange">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navchange">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/SHAYAR LOGO.png" alt="logo" class="img-fluid" />
@@ -114,9 +232,10 @@
                     </ul>
                 </div>
             </div>
-        </nav> -->
+        </nav> 
        
     </header>
+    <br><br><br>
     <!--header section end-->
 
     <div class="main">
@@ -125,7 +244,7 @@
         <section class="ptb-100 bg-image overflow-hidden" image-overlay="10">
             <div class="hero-bottom-shape-two" style="background: url('assets/img/hero-bottom-shape-2.svg')no-repeat bottom center"></div>
 
-            <div class="container" >
+            <div class="container" style="width: 100%;" >
                 <div class="row align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
                     <div class="col-md-12 col-lg-6">
                         <div class="hero-slider-content text-white py-5">
@@ -134,7 +253,8 @@
 
                             <div class="action-btns mt-3">
                                 <a href="#" class="btn btn-brand-03 btn-rounded mr-3">Download Now <i class="fas fa-cloud-download-alt pl-2"></i></a>
-                                <a href="https://www.youtube.com/watch?v=1APwq1df6Mw" class="popup-youtube btn btn-white btn-circle btn-icon"><i class="fas fa-play"></i> </a> <span class="pl-2"> Watch Now</span>
+                                <a href="#" class="btn btn-brand-03 btn-rounded mr-3"><i class="fas fa-play"><span class="pl-2"> Watch now </span></i></a>
+                                <!-- <a href="https://www.youtube.com/watch?v=1APwq1df6Mw" class="popup-youtube btn btn-white btn-circle btn-icon"><i class="fas fa-play"></i> </a> <span class="pl-2"> Watch Now</span> -->
                             </div>
                             <div class="hero-counter mt-4">
                                 <div class="row">
@@ -177,7 +297,10 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-lg-5">
                         <div class="img-wrap">
-                            <img src="assets/img/1.png" alt="app image" class="imge-fluid">
+                            <img src="assets/img/photo-collage.png" alt="app image" class="imge-fluid">
+                        </div> <br>
+                        <div class="img-wrap" style="float: right ;">
+                            <img src="assets/img/photo-collage (1).png" alt="app image" class="imge2-fluid" style="float: right;">
                         </div>
                     </div>
                 </div>
@@ -274,7 +397,7 @@
                             <div class="about-content-left">
                                 <h2>Biggest Platform For Shayari Creators & Writers</h2>
                                 <p id="para">Showcase your talent of poetry, where your audience wants to hear you more. Using this app you build your own audience, earn fame, recognition & money at the same time.</p>
-                                <ul class="dot-circle pt-3">
+                                <ul class="dot-circle pt-3" style="color: black;">
                                     <li>Upload your favorite poetries in Text + Photos + Video format.</li>
                                     <li>Create your profile, upload videos & get PAN India reach. </li>
                                     <li>Shoot a lip-sync video on anyone else's Shayari.</li>
@@ -327,7 +450,7 @@
                             <h2>Thousands Of Shayaris For Poetry Lovers </h2>
                             <p id="para">Search best shayaris, available across various categories such as relationships, family & friends & collections of popular creators.</p>
                             <!-- <p>Uniquely simplify sustainable applications whereas adaptive schemas. Competently brand performance based content and.</p> -->
-                            <ul class="dot-circle pt-2">
+                            <ul class="dot-circle pt-2" style="color: black;">
                                 <li>Hub of original, creative & imaginative shayaris. 	</li>
                                 
                                 <li>Shayaris on hot, exclusive, trendy & relatable topics.</li>
@@ -343,7 +466,7 @@
                                 
                             </ul>
 
-                            <div class="action-btns mt-4">
+                          <br>  <div class="action-btns mt-4">
                                 <a href="#" class="btn btn-brand-02 mr-3">Get Start Now</a>
                                 <a href="#" class="btn btn-outline-brand-02">More About Us</a>
                             </div>
@@ -366,7 +489,7 @@
                         <div class="about-content-left">
                             <h2>Be A Part Of Shayar Community</h2>
                             <p id="para">Shayar is building a social community of flaming & talented writers who can touch hearts through magic of words</p>
-                            <ul class="dot-circle pt-3">
+                            <ul class="dot-circle pt-3" style="color: black;">
                                 <li>Download from Playstore </li>
                                 <li>Join our Telegram channel 	
                                     </li>
@@ -470,7 +593,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-lg-9">
                         <div class="section-heading text-center mb-5">
-                            <h2>Shayar Features</h2>
+                        <center>    <h2>Shayar Features</h2></center>
                             <p></p>
 
                         </div>
@@ -478,7 +601,7 @@
                 </div>
 
                 <!--feature new style start-->
-                <div class="row align-items-center justify-content-md-center">
+              <center>  <div class="row align-items-center justify-content-md-center">
                     <div class="col-lg-4 col-md-12">
                         <div class="row">
                             <div class="col-12">
@@ -550,7 +673,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> </center>
                 <!--feature new style end-->
             </div>
         </div>
@@ -1329,8 +1452,8 @@
         <img src="assets/img/attitude-shayari-in-hindi.jpg">
         <img src="assets/img/attitude-shayari-in-hindi.jpg">
       </div>
-      <button id="Seemore">See More</button>
-      <button id="Seeless">See Less</button>
+      <button id="Seemore">See More</button> <br><br>
+      <button id="Seeless">See Less</button>   <br><br>
     <!-- gallery ends  -->
 
     <!--footer section start-->
@@ -1466,7 +1589,7 @@
                     <div class="copyright-wrap small-text">
                         <p class="mb-0">&copy; ThemeTags Design Agency, All rights reserved</p>
                     </div>
-                <!-- </div>
+                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="terms-policy-wrap text-lg-right text-md-right text-left">
                         <ul class="list-inline">
@@ -1479,164 +1602,118 @@
              </div> -->
         <!-- </div> -->
     <!-- </div> -->
-    <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="my-5">
-    <!-- Footer -->
-    <footer
-            class="text-center text-lg-start text-white"
-            style="background-color: #45526e"
-            >
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-            </div>
-            <!-- Grid column -->
-  
-            <hr class="w-100 clearfix d-md-none" />
-  
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-              <p>
-                <a class="text-white">MDBootstrap</a>
-              </p>
-              <p>
-                <a class="text-white">MDWordPress</a>
-              </p>
-              <p>
-                <a class="text-white">BrandFlow</a>
-              </p>
-              <p>
-                <a class="text-white">Bootstrap Angular</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-  
-            <hr class="w-100 clearfix d-md-none" />
-  
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                Useful links
-              </h6>
-              <p>
-                <a class="text-white">Your Account</a>
-              </p>
-              <p>
-                <a class="text-white">Become an Affiliate</a>
-              </p>
-              <p>
-                <a class="text-white">Shipping Rates</a>
-              </p>
-              <p>
-                <a class="text-white">Help</a>
-              </p>
-            </div>
-  
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none" />
-  
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-  
-        <hr class="my-3">
-  
-        <!-- Section: Copyright -->
-        <section class="p-3 pt-0">
-          <div class="row d-flex align-items-center">
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8 text-center text-md-start">
-              <!-- Copyright -->
-              <div class="p-3">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/"
-                   >MDBootstrap.com</a
-                  >
-              </div>
-              <!-- Copyright -->
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-              <!-- Facebook -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 class="text-white"
-                 role="button"
-                 ><i class="fab fa-facebook-f"></i
-                ></a>
-  
-              <!-- Twitter -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 class="text-white"
-                 role="button"
-                 ><i class="fab fa-twitter"></i
-                ></a>
-  
-              <!-- Google -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 class="text-white"
-                 role="button"
-                 ><i class="fab fa-google"></i
-                ></a>
-  
-              <!-- Instagram -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 class="text-white"
-                 role="button"
-                 ><i class="fab fa-instagram"></i
-                ></a>
-            </div>
-            <!-- Grid column -->
-          </div>
-        </section>
-        <!-- Section: Copyright -->
-      </div>
-      <!-- Grid container -->
-    </footer>
-    <!-- Footer -->
-    <div class="col-md-6 col-lg-5">
-        <div class="terms-policy-wrap text-lg-right text-md-right text-left">
-            <ul class="list-inline">
-                <li class="list-inline-item" style="float: left;"><a class="small-text" href="test1.html">Terms</a></li>
-                <li class="list-inline-item" style="float: left;"><a class="small-text" href="">Security</a></li>
-                <li class="list-inline-item" style="float: left;"><a class="small-text" href="Shayar Privacy Policy_V1.docx">Privacy Policy</a></li>
-            </ul>
-        </div> 
+    <!-- FOOTER START -->
+<div class="footer">
+    <br><br>
+    <div class="contain">
+    <div class="col">
+      <h1>Resources</h1>
+      <ul>
+          <li>
+              <a href="#">Help</a>
+          </li>
+          <li>
+              <a href="#">Events</a>
+          </li>
+          <li>
+              <a href="#">Live sessions</a>
+          </li>
+          <li>
+              <a href="#">Open source</a>
+          </li>
+          <li>
+              <a href="#">Documentation</a>
+          </li>
+      </ul>
     </div>
+    <div class="col">
+      <h1>Products</h1>
+      <ul>
+        <li>
+            <a href="#">Pricing</a>
+        </li>
+        <li>
+            <a href="#">Navigation</a>
+        </li>
+        <li>
+            <a href="#">AI Studio</a>
+        </li>
+        <li>
+            <a href="#">Page Speed </a>
+        </li>
+        <li>
+            <a href="#">Performance</a>
+        </li>
+    </ul>
+    </div>
+    <div class="col">
+      <h1>Company</h1>
+      
+      <ul>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Careers</a>
+        </li>
+        <li>
+            <a href="#">Customers</a>
+        </li>
+        <li>
+            <a href="#">Community</a>
+        </li>
+        <li>
+            <a href="#">Our Team</a>
+        </li>
+    </ul>
+    </div>
+
+    <div class="col">
+      <h1>Support</h1>
+      <ul>
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Sells</a>
+        </li>
+        <li>
+            <a href="#">Contact Support</a>
+        </li>
+        <li>
+            <a href="#">Network Status</a>
+        </li>
+        <li>
+            <a href="#">Product Services</a>
+        </li>
+    </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1><ul>
+      <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+      <li class="list-inline-item"><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="list-inline-item"><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li></ul>
+      <a href="#" class="navbar-brand mb-2">
+        <img src="assets/img/SHAYAR LOGO.png" alt="logo" class="img-fluid" style="width: 75%;">
+    </a>
+    </div>
+    
+  <div class="clearfix"> </div>
+  <br><br>
   </div>
-  <!-- End of .container -->
-    <!--footer bottom copyright end-->
-    <!--footer section end-->
-    <!--scroll bottom to top button start-->
+  </div>
+  <!-- END OF FOOTER -->
+  <div class="col-md-6 col-lg-5" > 
+    <div class="terms-policy-wrap text-lg-right text-md-right text-left" >
+      <center>  <ul class="list-inline" style="float: right;">
+            <li class="list-inline-item"><a class="small-text" href="test1.html">Terms</a></li>
+            <li class="list-inline-item"><a class="small-text" href="test3.html">Security</a></li>
+            <li class="list-inline-item"><a class="small-text" href="test2.html">Privacy Policy</a></li> </center>
+        </ul>
+    </div> 
+</div>
+    
     <div class="scroll-top scroll-to-target primary-bg text-white" data-target="html">
         <span class="fas fa-hand-point-up"></span>
     </div>
