@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="aos-by-red.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="darktheme.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
   
 <style>
     /* STYLES SPECIFIC TO FOOTER  */
@@ -23,7 +30,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  background-color:#9b79eb;
+  background-color:#916aec;
 }
 body{
     overflow-x: hidden;
@@ -131,13 +138,158 @@ body{
     width: 100%;
   }
 }
-</style>
+body.dark {
+  background-color: #292c35;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
 
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
 
-   
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+ </style>  
 </head>
 
-<body>
+<body id="darkb">
 
     <!--preloader start-->
     <div id="preloader">
@@ -232,6 +384,16 @@ body{
                     </ul>
                 </div>
             </div>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball'>
+              </label>
+            </div>
+                
+           
         </nav> 
        
     </header>
@@ -252,7 +414,7 @@ body{
                             <p class="lead">Explore Thousands Of Shayari Library Available In 30+ Categories In Text, Photo & Video Format</p>
 
                             <div class="action-btns mt-3">
-                                <a href="#" class="btn btn-brand-03 btn-rounded mr-3">Download Now <i class="fas fa-cloud-download-alt pl-2"></i></a>
+                                <a href="#" class="btn btn-brand-03 btn-rounded mr-3" style="font-weight: bold;">Download Now <i class="fas fa-cloud-download-alt pl-2"></i></a>
                                 <a href="#" class="btn btn-brand-03 btn-rounded mr-3"><i class="fas fa-play"><span class="pl-2"> Watch now </span></i></a>
                                 <!-- <a href="https://www.youtube.com/watch?v=1APwq1df6Mw" class="popup-youtube btn btn-white btn-circle btn-icon"><i class="fas fa-play"></i> </a> <span class="pl-2"> Watch Now</span> -->
                             </div>
@@ -261,7 +423,7 @@ body{
                                     <div class="col-6 col-sm-4">
                                         <div class="counter-item d-flex align-items-center py-3">
                                             <div class="single-counter-item">
-                                                <span class="h4 count-number text-white">2000</span>
+                                              <center>  <span class="h4 count-number text-white">2000</span></center>
                                                 <h6 class="text-white mb-0">Members</h6>
                                             </div>
                                             <span class="color-6 ml-2 p-2 rounded-circle">
@@ -272,7 +434,7 @@ body{
                                     <div class="col-6 col-sm-4">
                                         <div class="counter-item d-flex align-items-center py-3">
                                             <div class="single-counter-item">
-                                                <span class="h4 count-number text-white">20,000</span>
+                                               <center><span class="h4 count-number text-white">20,000</span> </center> 
                                                 <h6 class="text-white mb-0">Total Shayris</h6>
                                             </div>
                                             <span class="color-6 ml-2 p-2 rounded-circle">
@@ -450,7 +612,7 @@ body{
                             <h2>Thousands Of Shayaris For Poetry Lovers </h2>
                             <p id="para">Search best shayaris, available across various categories such as relationships, family & friends & collections of popular creators.</p>
                             <!-- <p>Uniquely simplify sustainable applications whereas adaptive schemas. Competently brand performance based content and.</p> -->
-                            <ul class="dot-circle pt-2" style="color: black;">
+                            <ul class="dot-circle pt-2" style="color: black;" id="lid">
                                 <li>Hub of original, creative & imaginative shayaris. 	</li>
                                 
                                 <li>Shayaris on hot, exclusive, trendy & relatable topics.</li>
@@ -474,7 +636,30 @@ body{
                     </div>
                 </div>
             </div>
-        </section>
+        </section> <br><br>
+         <!-- image gallery using grid -->
+   <div data-aos="zoom-in"> <strong><center><h2>Shayari</strong></h2></center>
+    <span><center>
+        Here you Find All Types Of Shayari Like- Sad, Happy, Romantic, For Girls, Attitude, Breakup, Motivational, Inspirational Etc, With Images. </center></span> </div>
+        <div class="img-gal" data-aos="fade-in" >
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+          </div>
+          <div class="img-gal" id="more" data-aos="zoom-in ">
+    
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+            <img src="assets/img/attitude-shayari-in-hindi.jpg">
+          </div>
+          <button id="Seemore">See More</button> <br><br>
+          <button id="Seeless">See Less</button>   <br><br>
+        <!-- gallery ends  -->
         <section id="about" class="about-us ptb-100 background-shape-img position-relative">
             <div class="animated-shape-wrap">
                 <div class="animated-shape-item"></div>
@@ -489,7 +674,7 @@ body{
                         <div class="about-content-left">
                             <h2>Be A Part Of Shayar Community</h2>
                             <p id="para">Shayar is building a social community of flaming & talented writers who can touch hearts through magic of words</p>
-                            <ul class="dot-circle pt-3" style="color: black;">
+                            <ul class="dot-circle pt-3" style="color: black;"   id="lid">
                                 <li>Download from Playstore </li>
                                 <li>Join our Telegram channel 	
                                     </li>
@@ -1021,7 +1206,7 @@ body{
                                 <div class="item">
                                     <div class="testimonial-quote-wrap">
                                         <div class="media author-info mb-3">
-                                            <div class="author-img mr-3" style="border-radius: 44%;">
+                                            <div class="author-img mr-3" style="display: none;">
                                                 <img src="assets/img/profiile.png" alt="client" class="imgc-fluid">
                                             </div>
                                             <div class="media-body text-white">
@@ -1038,7 +1223,7 @@ body{
                                 <div class="item">
                                     <div class="testimonial-quote-wrap">
                                         <div class="media author-info mb-3">
-                                            <div class="author-img mr-3" style="border-radius: 44%;">
+                                            <div class="author-img mr-3" style="display: none;">
                                                 <img src="assets/img/profiile.png" alt="client" class="imgc-fluid">
                                             </div>
                                             <div class="media-body text-white">
@@ -1055,7 +1240,7 @@ body{
                                 <div class="item">
                                     <div class="testimonial-quote-wrap">
                                         <div class="media author-info mb-3">
-                                            <div class="author-img mr-3" style="border-radius: 44%;">
+                                            <div class="author-img mr-3" style="display: none;">
                                                 <img src="assets/img/profiile.png" alt="client" class="imgc-fluid">
                                             </div>
                                             <div class="media-body text-white">
@@ -1433,28 +1618,8 @@ body{
         <!--our team section end-->
 
     </div>
-    <!-- image gallery using grid -->
-   <div> <center><h3>Gallery</h3> <br></center>
-<span><center> </center></span> </div>
-    <div class="img-gal" data-aos="fade-in" >
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-      </div>
-      <div class="img-gal" id="more" data-aos="zoom-in ">
-
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-        <img src="assets/img/attitude-shayari-in-hindi.jpg">
-      </div>
-      <button id="Seemore">See More</button> <br><br>
-      <button id="Seeless">See Less</button>   <br><br>
-    <!-- gallery ends  -->
+    <br><br>
+   
 
     <!--footer section start-->
     <!--when you want to remove subscribe newsletter container then you should remove .footer-with-newsletter class-->
@@ -1607,69 +1772,45 @@ body{
     <br><br>
     <div class="contain">
     <div class="col">
-      <h1>Resources</h1>
-      <ul>
-          <li>
-              <a href="#">Help</a>
-          </li>
-          <li>
-              <a href="#">Events</a>
-          </li>
-          <li>
-              <a href="#">Live sessions</a>
-          </li>
-          <li>
-              <a href="#">Open source</a>
-          </li>
-          <li>
-              <a href="#">Documentation</a>
-          </li>
-      </ul>
+        <a href="#" class="navbar-brand mb-2">
+            <img src="assets/img/SHAYAR LOGO.png" alt="logo" class="img-fluid" style="width: 95%;">
+        </a> <br><br><br><br><br>
+        <span>One stop shayri platform</span>
+        <br> <br> 
+        <h4>About us</h4>
+        <span>hjhjhjhjhj</span> <br>
+        <h4>Contact</h4>
+        <p><span class="glyphicon glyphicon-earphone"></span>225555</p>
+        <p> <span class="glyphicon glyphicon-envelope"></span>abc@gmail.com</p>
+       
+      
     </div>
+  
     <div class="col">
-      <h1>Products</h1>
+        <br><br>
+      <h1>Popular category</h1>
       <ul>
         <li>
-            <a href="#">Pricing</a>
+            <a href="#">Pyar</a>
         </li>
         <li>
-            <a href="#">Navigation</a>
+            <a href="#">sad</a>
         </li>
         <li>
-            <a href="#">AI Studio</a>
+            <a href="#">Motivational</a>
         </li>
         <li>
-            <a href="#">Page Speed </a>
+            <a href="#">Patriotic</a>
         </li>
         <li>
             <a href="#">Performance</a>
         </li>
     </ul>
     </div>
-    <div class="col">
-      <h1>Company</h1>
-      
-      <ul>
-        <li>
-            <a href="#">About Us</a>
-        </li>
-        <li>
-            <a href="#">Careers</a>
-        </li>
-        <li>
-            <a href="#">Customers</a>
-        </li>
-        <li>
-            <a href="#">Community</a>
-        </li>
-        <li>
-            <a href="#">Our Team</a>
-        </li>
-    </ul>
-    </div>
-
-    <div class="col">
+     <div class="col">
+         <br><br>
       <h1>Support</h1>
+      
       <ul>
         <li>
             <a href="#">FAQ</a>
@@ -1688,30 +1829,70 @@ body{
         </li>
     </ul>
     </div>
-    <div class="col social">
-      <h1>Social</h1><ul>
-      <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-      <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
-      <li class="list-inline-item"><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="list-inline-item"><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li></ul>
-      <a href="#" class="navbar-brand mb-2">
-        <img src="assets/img/SHAYAR LOGO.png" alt="logo" class="img-fluid" style="width: 75%;">
-    </a>
+    <div class="col">
+       
+    </div>
+
+   <!-- <div class="col">
+      <h1>Support</h1>
+      <ul>
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Sells</a>
+        </li>
+        <li>
+            <a href="#">Contact Support</a>
+        </li>
+        <li>
+            <a href="#">Network Status</a>
+        </li>
+        <li>
+            <a href="#">Product Services</a>
+        </li>
+    </ul>
+    </div>  -->
+    <div class="col social"> <br><br>
+      <h1>Subscribe for more info  &nbsp;</h1><ul>
+          <li><input type="text" style="border-radius: 20px; height: 45px;"></li>
+          <li><center><button style="border-radius: 18px; height: 35px;">subscribe</center></button></li>
+
+      </ul>
+      
+    
     </div>
     
   <div class="clearfix"> </div>
   <br><br>
   </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+     <a href="#">Shayar</a>.
+        </p>
+     </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+       <center><ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+        </ul></center> 
+      </div>
+    </div>
   <!-- END OF FOOTER -->
-  <div class="col-md-6 col-lg-5" > 
+  <!-- <div class="col-md-6 col-lg-5" > 
     <div class="terms-policy-wrap text-lg-right text-md-right text-left" >
       <center>  <ul class="list-inline" style="float: right;">
             <li class="list-inline-item"><a class="small-text" href="test1.html">Terms</a></li>
             <li class="list-inline-item"><a class="small-text" href="test3.html">Security</a></li>
             <li class="list-inline-item"><a class="small-text" href="test2.html">Privacy Policy</a></li> </center>
         </ul>
-    </div> 
+    </div>  -->
 </div>
     
     <div class="scroll-top scroll-to-target primary-bg text-white" data-target="html">
@@ -1730,7 +1911,8 @@ body{
     <script src="assets/js/vendors/magnific-popup.min.js"></script>
     <script src="assets/js/vendors/validator.min.js"></script>
     <script src="assets/js/app.js"></script>
-    
+    <script src="theme.js"></script>
+    <script src="darkswitch.js"></script>
     </script>
     <Script>
         document.getElementById("Seemore").onclick=function(){
@@ -1753,6 +1935,13 @@ body{
        });
      </script>
     
+    <script>
+  const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
+    </script>
     
 </body>
 
