@@ -13629,6 +13629,8 @@ img.mfp-img {
   width: 200px;
   margin-left: 20%;
   height: 50px;
+  color: #fff;
+  font-weight:bolder ;
 }
 #Seemore:hover{
   background-color: #fff;
@@ -13652,6 +13654,8 @@ img.mfp-img {
   width: 250px;
   margin-left: 23%;
   height: 50px;
+  color: #fff;
+  font-weight: bolder;
 }
 
 /* gallery ends */
@@ -29993,5 +29997,4 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
-
 
