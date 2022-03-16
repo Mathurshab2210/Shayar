@@ -36,7 +36,7 @@ body{
     overflow-x: hidden;
 }
 .footer .col {
-  width: 190px;
+  width: 250px;
   height: auto;
   float: left;
   box-sizing: border-box;
@@ -101,6 +101,9 @@ body{
     width: 1200px;
     margin: 0 auto;
   }
+  .fill{
+      width: 35%;
+  }
 }
 @media only screen and (max-width: 1139px) {
   .contain .social {
@@ -110,16 +113,22 @@ body{
   .social h1 {
     margin: 0px;
   }
+  .fill{
+      width: 35%;
+  }
 }
 @media only screen and (max-width: 950px) {
   .footer .col {
-    width: 33%;
+    width: 45%;
   }
   .footer .col h1 {
     font-size: 14px;
   }
   .footer .col ul li {
     font-size: 13px;
+  }
+  .fill{
+      width: 35%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -132,11 +141,31 @@ body{
     .footer .col ul li {
       font-size: 13px;
     }
+    .fill{
+      width: 35%;
+  }
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 360px) {
   .footer .col {
     width: 100%;
   }
+  .fill{
+      width: 35%;
+  }
+  .img-fluid{
+      width: 15%;
+  }
+  #social{
+      margin-right: 25%;
+  }
+  .social-icons li{
+      /* width: 25%; */
+  }
+  .social-icons a{
+      width: 25px;
+      height: 32px;
+  }
+
 }
 body.dark {
   background-color: #292c35;
@@ -1774,7 +1803,7 @@ body.dark {
     <div class="col">
         <a href="#" class="navbar-brand mb-2">
             <img src="assets/img/SHAYAR LOGO.png" alt="logo" class="img-fluid" style="width: 95%;">
-        </a> <br><br><br><br><br>
+        </a> <br><br><br><br><br> <br><br>
         <span>One stop shayri platform</span>
         <br> <br> 
         <h4>About us</h4>
@@ -1853,36 +1882,47 @@ body.dark {
         </li>
     </ul>
     </div>  -->
-    <div class="col social"> <br><br>
+    <!-- <div class="col social"> <br><br>
       <h1>Subscribe for more info  &nbsp;</h1><ul>
-          <li><input type="text" style="border-radius: 20px; height: 45px;"></li>
-          <li><center><button style="border-radius: 18px; height: 35px;">subscribe</center></button></li>
+          <li><input id="fill" type="text" style="border-radius: 20px; height: 45px;"></li>
+          <li><center><button  style="border-radius: 18px; height: 35px;">subscribe</center></button></li>
 
       </ul>
       
     
     </div>
+     -->
     
-  <div class="clearfix"> </div>
-  <br><br>
+  <div class="clearfix"> </div> <hr>
+  <div id="social" style="margin-left: 37%;" >
+    <ul class="social-icons" >
+       <li><a class="facebook" href="#"><i class="fab fa-twitter" ></i></a></li>
+       <li><a class="twitter" href="#"><i class="fab fa-youtube" ></i></a></li>
+       <li><a class="dribbble" href="#"><i class="fab fa-dribbble" ></i></a></li>
+       <li><a class="linkedin" href="#"><i class="fab fa-linkedin" ></i></a></li>   
+     </ul>
+   </div>
+  <br> <br> <br>
   </div>
+  
   </div>
+  
   <div class="container">
+    <div class="terms-policy-wrap text-lg-right text-md-right text-left" >
+        <center>  <ul class="list-inline" style="float: right;">
+              <li class="list-inline-item"><a class="small-text" href="test1.html">Terms</a></li>
+              <li class="list-inline-item"><a class="small-text" href="test3.html">Security</a></li>
+              <li class="list-inline-item"><a class="small-text" href="test2.html">Privacy Policy</a></li> </center>
+          </ul>
+      </div> 
     <div class="row">
-      <div class="col-md-8 col-sm-6 col-xs-12">
+      <div style="margin-left: 33%;">
         <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
      <a href="#">Shayar</a>.
         </p>
      </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-       <center><ul class="social-icons">
-          <li><a class="facebook" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="twitter" href="#"><i class="fab fa-youtube"></i></a></li>
-          <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
-          <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
-        </ul></center> 
-      </div>
+     
     </div>
   <!-- END OF FOOTER -->
   <!-- <div class="col-md-6 col-lg-5" > 
