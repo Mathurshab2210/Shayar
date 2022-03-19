@@ -30,7 +30,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  background-color:#23034C;
+  background-color:#23034c;
   /* padding-left: 10%; */
 }
 body{
@@ -68,10 +68,10 @@ body{
 }
 .footer .col ul li a{
     text-decoration: none;
-    color: silver;
+    color:silver;
 }
 .footer .col ul li {
-  color: black;
+  color:silver;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
@@ -325,6 +325,120 @@ hr{
     margin-right: 15%;
 
 }
+/* nav styling */
+start {
+	height: 100vh;
+	background: url(https://cdn.pixabay.com/photo/2018/01/22/13/07/sea-3098951_1280.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 18%;
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);	
+}
+
+#logoimg {
+   /* margin-left: 2.3em; */
+   max-width:55%;
+   /* height: auto !important; */
+}
+.logo a{
+    width: 55px;
+}
+
+ nav ul {
+	display: flex;
+    flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+    list-style-type: none;
+}
+
+ul li a {
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #262625;
+	font-weight: bold;
+    transition: .5s;
+}
+
+ul li a:hover {
+	background: #000;
+	color: #fff;
+    transition: .5s
+}
+
+.menu-trigger {
+    display:none;
+    margin-right: 1.5em;
+	/* background: #D56287; */
+    color: #fff;
+    padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width:816px) {
+	
+     .menu-trigger {
+    display:block;
+  }
+  
+    header {
+	display: flex;
+	align-items: flex-start;
+	height: 65%;
+	
+	
+    }
+  
+    nav ul {
+    display:block;
+	
+	
+	}
+	
+	ul li {
+    width: 90vh;
+	
+	}
+   
+    ul li a {
+        display: block;
+		/* text-align: center; */
+		color: #ffff;
+		background: violet;
+        
+	}
+  
+}
+
+@media (max-width: 359px)
+{
+	.logo img {
+       margin-left: 0.1em;
+       
+}
+	
+    
+}
+#ic{
+    
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+
+}
 
  </style>  
 </head>
@@ -345,9 +459,9 @@ hr{
     </div>
     <!--preloader end-->
     <!--header section start-->
-    <header class="header">
+    <!-- <header class="header"> -->
         <!--start navbar navbar navbar-expand-lg fixed-top bg-transparent navbar navbar-expand-sm fixed-top navbar-light-->
-        <nav class="navbar navbar-expand-lg fixed-top" id="navchange">
+        <!-- <nav class="navbar navbar-expand-lg fixed-top" id="navchange">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/SHAYAR LOGO.png" alt="logo" class="img-fluid" />
@@ -434,10 +548,33 @@ hr{
             </div>
                 
            
-        </nav> 
+        </nav>  -->
        
-    </header>
-    <br><br><br>
+    <!-- </header> -->
+    <section class="start">
+        <header>
+            <div class="logo" style="width: 205px;">
+                <a href=""><img src="assets/img/SHAYAR LOGO.png" alt="" id="logoimg"></a>
+            </div>
+            <nav>
+		    <ul>
+			    <li><a href="#">Home</a></li>
+				<li><a href="#screenshots">Screenshots</a></li>
+				<li><a href="#">Shayris</a></li>
+				<li><a href="#">xyz</a></li>
+				<li><a href="#">abc</a></li>
+				<li><a href="#">dfg</a></li>
+			</ul>
+            </nav>
+            <div class="menu">
+               <a href="#" class="menu-trigger"><div id="ic"></div>
+                <div id="ic"></div>
+                <div id="ic"></div>
+                </a>
+            </div>
+         </header>			
+      </section>
+
     <!--header section end-->
 
     <div class="main">
@@ -2061,6 +2198,19 @@ hr{
 checkbox.addEventListener('change', ()=>{
   document.body.classList.toggle('dark');
 })
+    </script>
+    <script>
+        $(document).ready(function() {
+  $('.menu-trigger').click(function() {
+    $('ul li').slideToggle(500);
+  });//end slide toggle
+  
+  $(window).resize(function() {		
+		if (  $(window).width() > 500 ) {			
+			$('ul li').removeAttr('style');
+		 }
+	});//end resize
+});//end ready
     </script>
     
 </body>
