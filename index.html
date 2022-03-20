@@ -33,6 +33,12 @@
   background-color:#23034c;
   /* padding-left: 10%; */
 }
+#social{
+    margin-left: 35%;
+}
+#mobsc{
+    display: none;
+}
 #mobcont{
     margin-left: 20%;
 }
@@ -167,12 +173,30 @@ body{
     .fill{
       width: 35%;
   }
+  .rox{
+      width: 100vw;
+      margin-right: 20%;
+  }
+  .social{
+      margin:0 auto;
+  }
   #mobcont{
       margin: 0 auto;
   }
   #mobfit{
       width: 60%;
       height: 56%;
+  }
+  .social{
+      margin:0 auot;
+  }
+  #mobsc{
+    display: block;
+    margin-left: 33%;
+ 
+}
+.social-icons{
+      display:none;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -188,13 +212,17 @@ body{
   #social{
       margin-right: 25%;
   }
-  .social-icons li{
-      /* width: 25%; */
+  
+  .rox{
+      width: 79vw;
+      
+     
   }
-  .social-icons a{
-      width: 25px;
-      height: 32px;
-  }
+  #mobsc{
+    display: block;
+    margin-left: 23%;
+ 
+}
   #mobcont{
       margin: 0 auto;
   }
@@ -202,6 +230,19 @@ body{
       width: 60%;
       height: 65%;
   }
+  .social{
+      margin:0 auot;
+      width: 100vw;
+      margin-right: 40%;
+  }
+  .social-icons{
+      display:none;
+  }
+  #social{
+      margin: 0;
+      width: 85vw;
+  }
+  
 
 }
 body.dark {
@@ -448,7 +489,7 @@ nav ul li a:hover {
         display: block;
 		/* text-align: center; */
 		color: #ffff;
-		background:  #23034c;
+		background: #23034c;
         
 	}
   
@@ -2150,7 +2191,10 @@ nav ul li a:hover {
          
   <div class="clearfix"> </div> <hr>
   <div class="rox">
-  <div id="social" style="margin-left: 37%;" >
+  <div id="social" >
+    <div id="mobsc">
+       <i class="fab fa-instagram" style="color: pink; font-size: 29px;"></i> &nbsp &nbsp<i class="fab fa-facebook-f" style="color: blue; font-size: 29px;">&nbsp &nbsp</i><i class="fab fa-whatsapp" style="color: green; font-size: 29px;">&nbsp &nbsp</i><i class="fab fa-telegram" style="color: lightblue; font-size: 29px;"></i>
+    </div>
      
     <ul class="social-icons" >
        <li><a class="facebook" href="#"><i class="fab fa-instagram" ></i></a></li>
